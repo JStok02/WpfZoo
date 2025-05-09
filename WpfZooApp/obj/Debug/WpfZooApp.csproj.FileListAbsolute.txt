@@ -1,0 +1,130 @@
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\App.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_Content.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_MarkupCompile.cache
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_MarkupCompile.lref
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.exe.config
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.exe
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.pdb
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.g.resources
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.Properties.Resources.resources
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.GenerateResource.cache
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.Up2Date
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.exe
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.pdb
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\AnimalsWindow.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\AuthWindow.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\FeedingsWindow.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksWindow.g.cs
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\AnimalsWindow.baml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\AuthWindow.baml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\FeedingsWindow.baml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksWindow.baml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Buffers.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Memory.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Identity.Core.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Buffers.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Memory.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.exe.config
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.exe
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\WpfZooApp.pdb
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Buffers.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Memory.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Identity.Core.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Buffers.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Memory.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\AnimalsWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\AuthWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\FeedingsWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\App.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_Content.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_MarkupCompile.cache
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp_MarkupCompile.lref
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\AnimalsWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\AuthWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\FeedingsWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.g.resources
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.Properties.Resources.resources
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.GenerateResource.cache
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.Up2Date
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.exe
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.pdb

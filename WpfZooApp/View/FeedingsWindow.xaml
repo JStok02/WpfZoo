@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfZooApp.View.FeedingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfZooApp.View"
+        mc:Ignorable="d"
+        Title="FeedingsWindow" Height="650" Width="900" Background="#F4E8D3">
+    <Grid Margin="20">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="380">
+            <TextBlock Text="ID животного" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <ComboBox x:Name="AnimalIdComboBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+            <TextBlock Text="Время кормления" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <DatePicker x:Name="FeedingTimeDatePicker" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+            
+            <TextBlock Text="Заметки" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <TextBox x:Name="NotesTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+            <Button Content="Добавить кормление" Click="AddFeeding_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0" />
+            <Button Content="Редактировать" Click="UpdateFeeding_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+            <Button Content="Удалить" Click="DeleteFeeding_Click" Background="#FF4C4C" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+        </StackPanel>
+        <DataGrid x:Name="FeedingsDataGrid" AutoGenerateColumns="True" HorizontalContentAlignment="Left" Width="400" Height="380" Margin="0,0,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="White" BorderBrush="Gray" Foreground="Black" RowBackground="White" AlternatingRowBackground="#F4E8D3" SelectionChanged="FeedingsDataGrid_SelectionChanged"/>
+    </Grid>
+</Window>

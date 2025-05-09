@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfZooApp.ContentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfZooApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="900">
+    <Grid>
+        <TabControl HorizontalAlignment="Center" VerticalAlignment="Center" Height="620" Width="900" Background="#F4E8D3" Padding="20">
+            <TabItem Header="Животные">
+                <Grid>
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="380">
+                        <TextBlock Text="Название животного" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                        <TextBox x:Name="AnimalNameTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                        <TextBlock Text="ID вида" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                        <TextBox x:Name="SpeciesIdTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                        <TextBlock Text="ID вольера" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                        <TextBox x:Name="EnclosureIdTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                        <Button Content="Добавить животное" Click="AddAnimal_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0" />
+                        <Button Content="Редактировать" Click="UpdateAnimal_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+                        <Button Content="Удалить" Click="DeleteAnimal_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+                    </StackPanel>
+                    <DataGrid x:Name="AnimalsDataGrid" AutoGenerateColumns="True" HorizontalContentAlignment="Left" Width="400" Height="380" Margin="0,0,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="White" BorderBrush="Gray" Foreground="Black" RowBackground="White" AlternatingRowBackground="#F4E8D3" SelectionChanged="AnimalsDataGrid_SelectionChanged"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
