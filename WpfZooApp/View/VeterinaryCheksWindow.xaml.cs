@@ -51,6 +51,12 @@ namespace WpfZooApp.View
         // Добавление нового осмотра
         private void AddCheck_Click(object sender, RoutedEventArgs e)
         {
+            if (AnimalIdComboBox.SelectedItem == null || !CheckDateDatePicker.SelectedDate.HasValue)
+            {
+                MessageBox.Show("Пожалуйста, заполните все поля с животным и временем перед добавлением.", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             using (var context = new ZooDBEntities())
             {
                 var check = new VeterinaryChecks
@@ -59,12 +65,19 @@ namespace WpfZooApp.View
                     check_date = CheckDateDatePicker.SelectedDate.Value,
                     result = ResultTextBox.Text
                 };
-                context.VeterinaryChecks.Add(check);
-                context.SaveChanges();
-            }
 
-            LoadData();
-            ClearCheckInputFields();
+                try
+                {
+                    context.VeterinaryChecks.Add(check);
+                    context.SaveChanges();
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                ClearCheckInputFields();
+            }
         }
 
         // Обновление информации о ветеринарном осмотре
@@ -81,9 +94,16 @@ namespace WpfZooApp.View
                         check.check_date = CheckDateDatePicker.SelectedDate.Value;
                         check.result = ResultTextBox.Text;
 
-                        context.SaveChanges();
-                        LoadData();
-                        ClearCheckInputFields();
+                        try
+                        {
+                            context.SaveChanges();
+                            LoadData();
+                            ClearCheckInputFields();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                 }
             }
@@ -99,10 +119,17 @@ namespace WpfZooApp.View
                     var check = context.VeterinaryChecks.FirstOrDefault(x => x.id == selectedCheckId);
                     if (check != null)
                     {
-                        context.VeterinaryChecks.Remove(check);
-                        context.SaveChanges();
-                        LoadData();
-                        ClearCheckInputFields();
+                        try
+                        {
+                            context.VeterinaryChecks.Remove(check);
+                            context.SaveChanges();
+                            LoadData();
+                            ClearCheckInputFields();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                 }
             }

@@ -128,3 +128,7 @@ C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.CoreCompile
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.csproj.Up2Date
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.exe
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\WpfZooApp.pdb
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\EnclosuresWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\SpeciesWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\EnclosuresWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\SpeciesWindow.baml

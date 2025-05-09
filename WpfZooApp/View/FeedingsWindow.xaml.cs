@@ -52,6 +52,12 @@ namespace WpfZooApp.View
         // Добавление кормления
         private void AddFeeding_Click(object sender, RoutedEventArgs e)
         {
+            if (AnimalIdComboBox.SelectedItem == null || !FeedingTimeDatePicker.SelectedDate.HasValue)
+            {
+                MessageBox.Show("Пожалуйста, заполните поля с животным и временем перед добавлением.", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             using (var context = new ZooDBEntities())
             {
                 var feeding = new Feedings
@@ -60,12 +66,19 @@ namespace WpfZooApp.View
                     feeding_time = FeedingTimeDatePicker.SelectedDate.Value,
                     notes = NotesTextBox.Text
                 };
-                context.Feedings.Add(feeding);
-                context.SaveChanges();
-            }
 
-            LoadData();
-            ClearFeedingInputFields();
+                try
+                {
+                    context.Feedings.Add(feeding);
+                    context.SaveChanges();
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                ClearFeedingInputFields();
+            }
         }
 
         // Обновление информации о кормлении
@@ -82,9 +95,16 @@ namespace WpfZooApp.View
                         feeding.feeding_time = FeedingTimeDatePicker.SelectedDate.Value;
                         feeding.notes = NotesTextBox.Text;
 
-                        context.SaveChanges();
-                        LoadData();
-                        ClearFeedingInputFields();
+                        try
+                        {
+                            context.SaveChanges();
+                            LoadData();
+                            ClearFeedingInputFields();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                 }
             }
@@ -100,10 +120,17 @@ namespace WpfZooApp.View
                     var feeding = context.Feedings.FirstOrDefault(x => x.id == selectedFeedingId);
                     if (feeding != null)
                     {
-                        context.Feedings.Remove(feeding);
-                        context.SaveChanges();
-                        LoadData();
-                        ClearFeedingInputFields();
+                        try
+                        {
+                            context.Feedings.Remove(feeding);
+                            context.SaveChanges();
+                            LoadData();
+                            ClearFeedingInputFields();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Неизвестная ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                 }
             }

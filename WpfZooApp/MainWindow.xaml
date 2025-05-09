@@ -11,6 +11,8 @@
             <MenuItem x:Name="AnimalsMenuItem" Header="Животные" Click="Animals_Click"></MenuItem>
             <MenuItem x:Name="FeedingsMenuItem" Header="Кормления" Click="Feedings_Click" Visibility="Collapsed"></MenuItem>
             <MenuItem x:Name="VeterinaryMenuItem" Header="Осмотры" Click="Veterinary_Click" Visibility="Collapsed"></MenuItem>
+            <MenuItem x:Name="EnclosuresMenuItem" Header="Вольеры" Click="Enclosures_Click" Visibility="Collapsed"></MenuItem>
+            <MenuItem x:Name="SpeciesMenuItem" Header="Виды животных" Click="Species_Click" Visibility="Collapsed"></MenuItem>
             <MenuItem x:Name="Exit" Header="Выход" Click="Exit_Click"></MenuItem>
         </Menu>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Orientation="Vertical">

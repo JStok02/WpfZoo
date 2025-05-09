@@ -37,16 +37,22 @@ namespace WpfZooApp
             {
                 VeterinaryMenuItem.Visibility = Visibility.Visible;
                 FeedingsMenuItem.Visibility = Visibility.Collapsed;
+                EnclosuresMenuItem.Visibility = Visibility.Collapsed;
+                SpeciesMenuItem.Visibility = Visibility.Collapsed;
             }
             else if (_role == "Keeper")
             {
                 VeterinaryMenuItem.Visibility = Visibility.Collapsed;
                 FeedingsMenuItem.Visibility = Visibility.Visible;
+                EnclosuresMenuItem.Visibility = Visibility.Collapsed;
+                SpeciesMenuItem.Visibility = Visibility.Collapsed;
             }
             else if (_role == "Director")
             {
                 VeterinaryMenuItem.Visibility = Visibility.Visible;
                 FeedingsMenuItem.Visibility = Visibility.Visible;
+                EnclosuresMenuItem.Visibility = Visibility.Visible;
+                SpeciesMenuItem.Visibility = Visibility.Visible;
             }
         }
 
@@ -64,6 +70,16 @@ namespace WpfZooApp
         {
             VeterinaryCheksWindow wVeterinary = new VeterinaryCheksWindow();
             wVeterinary.Show();
+        }
+        private void Enclosures_Click(object sender, RoutedEventArgs e)
+        {
+            EnclosuresWindow wEnclosures = new EnclosuresWindow();
+            wEnclosures.Show();
+        }
+        private void Species_Click(object sender, RoutedEventArgs e)
+        {
+            SpeciesWindow wSpecies = new SpeciesWindow();
+            wSpecies.Show();
         }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {

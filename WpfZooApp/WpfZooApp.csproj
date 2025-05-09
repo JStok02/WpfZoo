@@ -146,8 +146,14 @@
     <Compile Include="View\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\EnclosuresWindow.xaml.cs">
+      <DependentUpon>EnclosuresWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\FeedingsWindow.xaml.cs">
       <DependentUpon>FeedingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpeciesWindow.xaml.cs">
+      <DependentUpon>SpeciesWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\VeterinaryCheksWindow.xaml.cs">
       <DependentUpon>VeterinaryCheksWindow.xaml</DependentUpon>
@@ -187,7 +193,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\EnclosuresWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\FeedingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SpeciesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

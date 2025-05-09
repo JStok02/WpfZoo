@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\obj\Debug\
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\
 WpfZooApp
 none
 false
 DEBUG;TRACE
-C:\Users\user\Desktop\УП 05.05.2025\WpfZooApp\WpfZooApp\App.xaml
-5-936620936
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\App.xaml
+7-699564447
 2-1358856639
-20559380596
-37940333235
-MainWindow.xaml;View\AnimalsWindow.xaml;View\AuthWindow.xaml;View\FeedingsWindow.xaml;View\VeterinaryCheksWindow.xaml;
+22-999425629
+371113887283
+MainWindow.xaml;View\AnimalsWindow.xaml;View\AuthWindow.xaml;View\EnclosuresWindow.xaml;View\FeedingsWindow.xaml;View\SpeciesWindow.xaml;View\VeterinaryCheksWindow.xaml;
 
-False
+True
 
