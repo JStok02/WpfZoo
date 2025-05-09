@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище ZooDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Animals">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="species_id" Type="int" Nullable="false" />
+          <Property Name="enclosure_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Enclosures">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="max_species" Type="int" />
+        </EntityType>
+        <EntityType Name="Feedings">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="animal_id" Type="int" Nullable="false" />
+          <Property Name="feeding_time" Type="datetime" Nullable="false" />
+          <Property Name="notes" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Species">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="255" />
+          <Property Name="role" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VeterinaryChecks">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="animal_id" Type="int" Nullable="false" />
+          <Property Name="check_date" Type="date" Nullable="false" />
+          <Property Name="result" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK__Animals__enclosu__3D5E1FD2">
+          <End Role="Enclosures" Type="Self.Enclosures" Multiplicity="1" />
+          <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Enclosures">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Animals">
+              <PropertyRef Name="enclosure_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Animals__species__3C69FB99">
+          <End Role="Species" Type="Self.Species" Multiplicity="1" />
+          <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Species">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Animals">
+              <PropertyRef Name="species_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Feedings__animal__403A8C7D">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="Feedings" Type="Self.Feedings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Feedings">
+              <PropertyRef Name="animal_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Veterinar__anima__4316F928">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="VeterinaryChecks" Type="Self.VeterinaryChecks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="VeterinaryChecks">
+              <PropertyRef Name="animal_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище ZooDBModelContainer">
+          <EntitySet Name="Animals" EntityType="Self.Animals" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Enclosures" EntityType="Self.Enclosures" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Feedings" EntityType="Self.Feedings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Species" EntityType="Self.Species" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VeterinaryChecks" EntityType="Self.VeterinaryChecks" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Animals__enclosu__3D5E1FD2" Association="Self.FK__Animals__enclosu__3D5E1FD2">
+            <End Role="Enclosures" EntitySet="Enclosures" />
+            <End Role="Animals" EntitySet="Animals" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Animals__species__3C69FB99" Association="Self.FK__Animals__species__3C69FB99">
+            <End Role="Species" EntitySet="Species" />
+            <End Role="Animals" EntitySet="Animals" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Feedings__animal__403A8C7D" Association="Self.FK__Feedings__animal__403A8C7D">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Feedings" EntitySet="Feedings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Veterinar__anima__4316F928" Association="Self.FK__Veterinar__anima__4316F928">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="VeterinaryChecks" EntitySet="VeterinaryChecks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ZooDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Animals">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="species_id" Type="Int32" Nullable="false" />
+          <Property Name="enclosure_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Enclosures">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="max_species" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Feedings">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="animal_id" Type="Int32" Nullable="false" />
+          <Property Name="feeding_time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Species">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="role" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VeterinaryChecks">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="animal_id" Type="Int32" Nullable="false" />
+          <Property Name="check_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK__Animals__enclosu__3D5E1FD2">
+          <End Role="Enclosures" Type="Self.Enclosures" Multiplicity="1" />
+          <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Enclosures">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Animals">
+              <PropertyRef Name="enclosure_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Animals__species__3C69FB99">
+          <End Role="Species" Type="Self.Species" Multiplicity="1" />
+          <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Species">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Animals">
+              <PropertyRef Name="species_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Feedings__animal__403A8C7D">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="Feedings" Type="Self.Feedings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Feedings">
+              <PropertyRef Name="animal_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Veterinar__anima__4316F928">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="VeterinaryChecks" Type="Self.VeterinaryChecks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="VeterinaryChecks">
+              <PropertyRef Name="animal_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ZooDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Animals" EntityType="Self.Animals" />
+          <EntitySet Name="Enclosures" EntityType="Self.Enclosures" />
+          <EntitySet Name="Feedings" EntityType="Self.Feedings" />
+          <EntitySet Name="Species" EntityType="Self.Species" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
+          <EntitySet Name="VeterinaryChecks" EntityType="Self.VeterinaryChecks" />
+          <AssociationSet Name="FK__Animals__enclosu__3D5E1FD2" Association="Self.FK__Animals__enclosu__3D5E1FD2">
+            <End Role="Enclosures" EntitySet="Enclosures" />
+            <End Role="Animals" EntitySet="Animals" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Animals__species__3C69FB99" Association="Self.FK__Animals__species__3C69FB99">
+            <End Role="Species" EntitySet="Species" />
+            <End Role="Animals" EntitySet="Animals" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Feedings__animal__403A8C7D" Association="Self.FK__Feedings__animal__403A8C7D">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Feedings" EntitySet="Feedings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Veterinar__anima__4316F928" Association="Self.FK__Veterinar__anima__4316F928">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="VeterinaryChecks" EntitySet="VeterinaryChecks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ZooDBModelContainer" CdmEntityContainer="ZooDBEntities">
+          <EntitySetMapping Name="Animals">
+            <EntityTypeMapping TypeName="ZooDBModel.Animals">
+              <MappingFragment StoreEntitySet="Animals">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="species_id" ColumnName="species_id" />
+                <ScalarProperty Name="enclosure_id" ColumnName="enclosure_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Enclosures">
+            <EntityTypeMapping TypeName="ZooDBModel.Enclosures">
+              <MappingFragment StoreEntitySet="Enclosures">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="max_species" ColumnName="max_species" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Feedings">
+            <EntityTypeMapping TypeName="ZooDBModel.Feedings">
+              <MappingFragment StoreEntitySet="Feedings">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="animal_id" ColumnName="animal_id" />
+                <ScalarProperty Name="feeding_time" ColumnName="feeding_time" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Species">
+            <EntityTypeMapping TypeName="ZooDBModel.Species">
+              <MappingFragment StoreEntitySet="Species">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="ZooDBModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ZooDBModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VeterinaryChecks">
+            <EntityTypeMapping TypeName="ZooDBModel.VeterinaryChecks">
+              <MappingFragment StoreEntitySet="VeterinaryChecks">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="animal_id" ColumnName="animal_id" />
+                <ScalarProperty Name="check_date" ColumnName="check_date" />
+                <ScalarProperty Name="result" ColumnName="result" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

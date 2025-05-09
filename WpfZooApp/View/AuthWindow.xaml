@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfZooApp.View.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfZooApp.View"
+        mc:Ignorable="d" Title="MainWindow" Height="400" Width="300">
+    <Grid>
+        <TabControl HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="360" Width="300" Background="#F4E8D3" Padding="20">
+            <TabItem Header="Войти" Padding="20, 0">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+                    <TextBlock Text="Логин" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                    <TextBox x:Name="NameLoginTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                    <TextBlock Text="Пароль" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                    <PasswordBox x:Name="PasswordLoginTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                    <Button Content="Войти" Click="Login_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0" />
+                    <Button Content="Выход" Click="Exit_Click" Background="#FF4C4C" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Регистрация" Padding="20, 0">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+                    <TextBlock Text="Логин" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                    <TextBox x:Name="NameRegisterTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                    <TextBlock Text="Пароль" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                    <PasswordBox x:Name="PasswordRegisterTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+                    <TextBlock Text="Роль" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+                    <ComboBox x:Name="RoleRegisterComboBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5">
+                        <ComboBoxItem Content="Vet"/>
+                        <ComboBoxItem Content="Keeper"/>
+                    </ComboBox>
+
+                    <Button Content="Зарегистрироваться" Click="Register_Click" Background="#67BA80" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0" />
+                    <Button Content="Выход" Click="Exit_Click" Background="#FF4C4C" Foreground="White" Height="25" FontSize="12" Margin="0, 10, 0, 0"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
