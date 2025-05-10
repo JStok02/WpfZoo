@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfZooApp.View.VeterinaryCheksOldWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfZooApp.View"
+        mc:Ignorable="d"
+        Title="VeterinaryCheksOldWindow" Height="650" Width="900" Background="#F4E8D3">
+    <Grid Margin="20">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="380">
+            <TextBlock Text="Название животного" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <ComboBox x:Name="AnimalIdComboBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+            <TextBlock Text="Дата осмотра" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <DatePicker x:Name="CheckDateDatePicker" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+
+            <TextBlock Text="Результат осмотра" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <TextBox x:Name="ResultTextBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
+        </StackPanel>
+        <DataGrid x:Name="VeterinaryChecksOldDataGrid" AutoGenerateColumns="True" HorizontalContentAlignment="Left" Width="400" Height="380" Margin="0,0,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="White" BorderBrush="Gray" Foreground="Black" RowBackground="White" AlternatingRowBackground="#F4E8D3" SelectionChanged="VeterinaryChecksOldDataGrid_SelectionChanged"/>
+    </Grid>
+</Window>

@@ -66,10 +66,15 @@ namespace WpfZooApp
             FeedingsWindow wFeedings = new FeedingsWindow();
             wFeedings.Show();
         }
-        private void Veterinary_Click(object sender, RoutedEventArgs e)
+        private void VeterinaryAll_Click(object sender, RoutedEventArgs e)
         {
             VeterinaryCheksWindow wVeterinary = new VeterinaryCheksWindow();
             wVeterinary.Show();
+        }
+        private void VeterinaryOld_Click(object sender, RoutedEventArgs e)
+        {
+            VeterinaryCheksOldWindow wVeterinaryOld = new VeterinaryCheksOldWindow();
+            wVeterinaryOld.Show();
         }
         private void Enclosures_Click(object sender, RoutedEventArgs e)
         {

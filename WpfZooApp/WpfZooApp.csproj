@@ -155,6 +155,9 @@
     <Compile Include="View\SpeciesWindow.xaml.cs">
       <DependentUpon>SpeciesWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\VeterinaryCheksOldWindow.xaml.cs">
+      <DependentUpon>VeterinaryCheksOldWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VeterinaryCheksWindow.xaml.cs">
       <DependentUpon>VeterinaryCheksWindow.xaml</DependentUpon>
     </Compile>
@@ -202,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\SpeciesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VeterinaryCheksOldWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

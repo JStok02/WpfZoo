@@ -8,7 +8,7 @@
         Title="VeterinaryCheksWindow" Height="650" Width="900" Background="#F4E8D3">
     <Grid Margin="20">
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="380">
-            <TextBlock Text="ID животного" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
+            <TextBlock Text="Навание животного" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>
             <ComboBox x:Name="AnimalIdComboBox" Margin="0, 5, 0, 5" FontSize="14" Padding="5"/>
 
             <TextBlock Text="Дата осмотра" FontWeight="SemiBold" FontSize="16" Foreground="#505050"/>

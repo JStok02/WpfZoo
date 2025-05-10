@@ -132,3 +132,5 @@ C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\EnclosuresWindow.g.cs
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\SpeciesWindow.g.cs
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\EnclosuresWindow.baml
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\SpeciesWindow.baml
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksOldWindow.g.cs
+C:\Users\user\Desktop\WpfZooApp\WpfZooApp\obj\Debug\View\VeterinaryCheksOldWindow.baml

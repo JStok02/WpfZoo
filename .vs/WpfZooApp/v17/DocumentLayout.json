@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\WpfZooApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|c:\\users\\user\\desktop\\wpfzooapp\\wpfzooapp\\view\\specieswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|c:\\users\\user\\desktop\\wpfzooapp\\wpfzooapp\\view\\veterinarychekswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\veterinarychekswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|C:\\Users\\user\\Desktop\\WpfZooApp\\wpfzooapp\\view\\specieswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\specieswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|c:\\users\\user\\desktop\\wpfzooapp\\wpfzooapp\\view\\specieswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\specieswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|c:\\users\\user\\desktop\\wpfzooapp\\wpfzooapp\\view\\feedingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\feedingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|C:\\Users\\user\\Desktop\\WpfZooApp\\wpfzooapp\\view\\animalswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\animalswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|C:\\Users\\user\\Desktop\\WpfZooApp\\wpfzooapp\\view\\animalswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\animalswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|c:\\users\\user\\desktop\\wpfzooapp\\wpfzooapp\\view\\enclosureswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{80E71C07-1ED9-4174-97C3-961BC7C3D440}|WpfZooApp\\WpfZooApp.csproj|solutionrelative:wpfzooapp\\view\\enclosureswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +34,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpeciesWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\SpeciesWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfZooApp\\View\\SpeciesWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\SpeciesWindow.xaml.cs",
-              "RelativeToolTip": "WpfZooApp\\View\\SpeciesWindow.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAswBsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T07:55:46.202Z",
+              "DocumentIndex": 0,
+              "Title": "VeterinaryCheksWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\VeterinaryCheksWindow.xaml",
+              "RelativeDocumentMoniker": "WpfZooApp\\View\\VeterinaryCheksWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\VeterinaryCheksWindow.xaml",
+              "RelativeToolTip": "WpfZooApp\\View\\VeterinaryCheksWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-10T07:49:22.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SpeciesWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\SpeciesWindow.xaml",
               "RelativeDocumentMoniker": "WpfZooApp\\View\\SpeciesWindow.xaml",
@@ -60,26 +59,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AnimalsWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\AnimalsWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfZooApp\\View\\AnimalsWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\AnimalsWindow.xaml.cs",
-              "RelativeToolTip": "WpfZooApp\\View\\AnimalsWindow.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwD0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T14:25:42.838Z",
+              "Title": "FeedingsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\FeedingsWindow.xaml",
+              "RelativeDocumentMoniker": "WpfZooApp\\View\\FeedingsWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\FeedingsWindow.xaml",
+              "RelativeToolTip": "WpfZooApp\\View\\FeedingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-10T07:49:06.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AnimalsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\AnimalsWindow.xaml",
-              "RelativeDocumentMoniker": "WpfZooApp\\View\\AnimalsWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\AnimalsWindow.xaml",
-              "RelativeToolTip": "WpfZooApp\\View\\AnimalsWindow.xaml",
+              "Title": "EnclosuresWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\EnclosuresWindow.xaml",
+              "RelativeDocumentMoniker": "WpfZooApp\\View\\EnclosuresWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\WpfZooApp\\WpfZooApp\\View\\EnclosuresWindow.xaml",
+              "RelativeToolTip": "WpfZooApp\\View\\EnclosuresWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T14:25:40.821Z",
+              "WhenOpened": "2025-05-10T07:49:02.249Z",
               "EditorCaption": ""
             }
           ]

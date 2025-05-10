@@ -10,7 +10,10 @@
         <Menu>
             <MenuItem x:Name="AnimalsMenuItem" Header="Животные" Click="Animals_Click"></MenuItem>
             <MenuItem x:Name="FeedingsMenuItem" Header="Кормления" Click="Feedings_Click" Visibility="Collapsed"></MenuItem>
-            <MenuItem x:Name="VeterinaryMenuItem" Header="Осмотры" Click="Veterinary_Click" Visibility="Collapsed"></MenuItem>
+            <MenuItem x:Name="VeterinaryMenuItem" Header="Осмотры" Visibility="Collapsed">
+                <MenuItem x:Name="AllChecksMenuItem" Header="Все осмотры животных" Click="VeterinaryAll_Click"/>
+                <MenuItem x:Name="OldChecksMenuItem" Header="Осмотры животных более месяца назад" Click="VeterinaryOld_Click"/>
+            </MenuItem>
             <MenuItem x:Name="EnclosuresMenuItem" Header="Вольеры" Click="Enclosures_Click" Visibility="Collapsed"></MenuItem>
             <MenuItem x:Name="SpeciesMenuItem" Header="Виды животных" Click="Species_Click" Visibility="Collapsed"></MenuItem>
             <MenuItem x:Name="Exit" Header="Выход" Click="Exit_Click"></MenuItem>

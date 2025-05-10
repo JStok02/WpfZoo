@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Desktop\WpfZooApp\WpfZooApp\App.xaml
-7-699564447
+8-1557585084
 2-1358856639
-211082662989
+222106800934
 371113887283
-MainWindow.xaml;View\AnimalsWindow.xaml;View\AuthWindow.xaml;View\EnclosuresWindow.xaml;View\FeedingsWindow.xaml;View\SpeciesWindow.xaml;View\VeterinaryCheksWindow.xaml;
+MainWindow.xaml;View\AnimalsWindow.xaml;View\AuthWindow.xaml;View\EnclosuresWindow.xaml;View\FeedingsWindow.xaml;View\SpeciesWindow.xaml;View\VeterinaryCheksOldWindow.xaml;View\VeterinaryCheksWindow.xaml;
 
 False
 
